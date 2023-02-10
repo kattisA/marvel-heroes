@@ -29,8 +29,26 @@ function App() {
     <div className="App">
       <Container>
        <div>
-           Hello!{data[5].name}
-
+           <div className="ui card">
+               <div className="image">
+                   <img src={data[4].thumbnail.path + "." +data[4].thumbnail.extension}/>
+               </div>
+               <div className="content">
+                   <a className="header">{data[4].name}</a>
+                   <div className="meta">
+                       <span className="date">Joined in 2013</span>
+                   </div>
+                   <div className="description">
+                       {data[4].description}
+                   </div>
+               </div>
+               <div className="extra content">
+                   {/*<a>
+                       <i className="user icon"></i>
+                       22 Friends
+                   </a>*/}
+               </div>
+           </div>
        </div>
       </Container>
     </div>
