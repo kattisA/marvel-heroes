@@ -6,16 +6,16 @@ const Marvel = ({data}) => {
         <Container>
             <div>
                 <div className="ui card">
-                    <div className="image">
+                   {/* <div className="image">
                         <img src={data[4].thumbnail.path + "." +data[4].thumbnail.extension}/>
-                    </div>
+                    </div>*/}
                     <div className="content">
-                        <a className="header">{data[4].name}</a>
+                        <a className="header">{data.name}</a>
                         <div className="meta">
                             <span className="date">Joined in 2013</span>
                         </div>
                         <div className="description">
-                            {data[4].description}
+                            {data.description}
                         </div>
                     </div>
                     <div className="extra content">
